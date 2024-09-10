@@ -40,6 +40,14 @@ public class Document {
         this.texte="";
     }
 
+    public void inserer(int pos,String txt){
+        String partiedroite = texte.substring(pos);
+        texte = texte.substring(0,pos);
+        ajouter(txt);
+        texte = texte + partiedroite;
+    }
+
+
     @Override
     public String toString() {
         return this.texte;
