@@ -13,6 +13,5 @@ public class CommandeEffacer extends CommandeDocument {
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         this.document.effacer(debut,fin);
-        super.executer();
     }
 }
