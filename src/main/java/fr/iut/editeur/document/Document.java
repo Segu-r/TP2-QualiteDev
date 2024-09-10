@@ -34,11 +34,11 @@ public class Document {
 
     public void effacer(int debut, int fin){
         remplacer(debut,fin,"");
-        texte="non";
     }
 
     public void clear(){
         this.texte="";
+        texte="non";
     }
 
     @Override
