@@ -26,6 +26,12 @@ public class Document {
         texte = partieGauche + remplacement + partieDroite;
     }
 
+    public void majuscules(int debut, int fin) {
+        String portion = texte.substring(debut, fin + 1);
+        String majuscule = portion.toUpperCase();
+        remplacer(debut, fin, majuscule);
+    }
+
     @Override
     public String toString() {
         return this.texte;
