@@ -1,13 +1,22 @@
 package fr.iut.editeur.document;
-
+/*
+   * Voici ma super classe document
+ */
 public class Document {
-
+    /*
+    c'est le texte de mon document !
+     */
     private String texte;
 
+    /*
+
+     */
     public Document() {
         this.texte = "";
     }
-	
+	/*
+	ca permet de recuperer le texte!
+	 */
     public String getTexte() {
         return texte;
     }
@@ -15,7 +24,10 @@ public class Document {
     public void setTexte(String texte) {
         this.texte = texte;
     }
-
+    /*
+    alors celle la vraiment énorme, je peux ajouter du texte :o
+    @param var1 la c'est le super texte que je vais écrire !
+     */
     public void ajouter(String texte) {
         this.texte += texte;
     }
